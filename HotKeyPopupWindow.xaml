@@ -1,0 +1,56 @@
+﻿<Window x:Class="Autom8.HotKeyPopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autom8"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Closing="OnClosing"
+        Title="Autom8" Height="104.633" Width="729.409" Icon="Images/Autom8_Icon.png" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="Manual" Visibility="Visible" Padding="0" HorizontalAlignment="Center" Background="#FF4833B0">
+
+    <Grid Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF212B4E">
+        <ComboBox x:Name="appSelect" Style="{StaticResource MaterialDesignDataGridComboBox}" Margin="10,10,562.4,11.4" Background="#FFA96BFF" BorderBrush="#FFF4FF00" HorizontalContentAlignment="Center" Padding="0" HorizontalAlignment="Center" Width="150" Height="49" BorderThickness="0,0,0,2" VerticalAlignment="Center" MinWidth="61" VerticalContentAlignment="Center" >
+            <ComboBox.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </ComboBox.Effect>
+            <ComboBoxItem IsSelected="True" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                <Label Content="APPS" FontSize="20" Foreground="#DDFFFFFF"/>
+            </ComboBoxItem>
+            <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
+            <ComboBoxItem>ComboBox Item #2</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="webSelect" Style="{StaticResource MaterialDesignDataGridComboBox}" Margin="165,10,407.4,11.4" Background="#FFA96BFF" BorderBrush="#FFF4FF00" HorizontalContentAlignment="Center" Padding="0" HorizontalAlignment="Center" Width="150" Height="49" BorderThickness="0,0,0,2" VerticalAlignment="Center" MinWidth="61" VerticalContentAlignment="Center" >
+            <ComboBox.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </ComboBox.Effect>
+            <ComboBoxItem IsSelected="True" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                <Label Content="SIGNIN" FontSize="20" Foreground="#DDFFFFFF"/>
+            </ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="cmdSelect" Style="{StaticResource MaterialDesignDataGridComboBox}" Margin="320,10,252.4,11.4" Background="#FFA96BFF" BorderBrush="#FFF4FF00" HorizontalContentAlignment="Center" Padding="0" HorizontalAlignment="Center" Width="150" Height="49" BorderThickness="0,0,0,2" VerticalAlignment="Center" MinWidth="61" VerticalContentAlignment="Center" >
+            <ComboBox.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </ComboBox.Effect>
+            <ComboBoxItem IsSelected="True" VerticalAlignment="Center" VerticalContentAlignment="Center" Foreground="White">
+                <Label Content="COMMANDS" FontSize="20" Foreground="#DDFFFFFF"/>
+            </ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="scriptSelect" Style="{StaticResource MaterialDesignDataGridComboBox}" Margin="475,10,97.4,11.4" Background="#FFA96BFF" BorderBrush="#FFF4FF00" HorizontalContentAlignment="Center" Padding="0" HorizontalAlignment="Center" Width="150" Height="49" BorderThickness="0,0,0,2" VerticalAlignment="Center" MinWidth="61" VerticalContentAlignment="Center" >
+            <ComboBox.Effect>
+                <DropShadowEffect Opacity="0.5"/>
+            </ComboBox.Effect>
+            <ComboBoxItem IsSelected="True" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                <Label Content="SCRIPTS" FontSize="20" Foreground="#DDFFFFFF"/>
+            </ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="settingsBtn" HorizontalAlignment="Left"  Height="30" Margin="660,10,0,0" VerticalAlignment="Top" Width="30" Background="{x:Null}" Click="OpenSettings" Foreground="White" BorderBrush="White">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Width="30" Height="30" Source="Images/settings.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>
