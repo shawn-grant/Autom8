@@ -1,2 +1,2 @@
 # Autom8
- Auutomation app for Windows
+ Automation app for Windows
